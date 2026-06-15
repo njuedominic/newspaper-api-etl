@@ -9,6 +9,4 @@ def fetch_articles():
     fetch_data  = ju.fetch_json(url)
     df = ju.unwrap_data(fetch_data)
     return df
-
-news_df = fetch_articles()
-print(news_df.head())
+    
