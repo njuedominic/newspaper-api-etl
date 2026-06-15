@@ -6,7 +6,7 @@ This project implements a simple ETL pipeline that extracts articles from the [N
 
 - Extracts news article data from the API.
 - Transforms the raw payload into a smaller, analysis-friendly dataframe.
-- Loads the processed records into PostgreSQL.
+- Loads the processed records into a PostgreSQL DB in a VPS.
 
 ## Requirements
 
@@ -17,11 +17,11 @@ This project implements a simple ETL pipeline that extracts articles from the [N
 
 1. Configure the API key and database connection details in your environment.
 2. Install the project dependencies
-3. Run the ETL job from the project entry point.
+3. Run the ETL job from the project entry point. ```main.py```.
 
 ## Configuration
 
-
+Configure these variables in the ```.env`` file.
 - `NEWSAPI_KEY`
 - `POSTGRES_HOST`
 - `POSTGRES_PORT`
