@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from dotenv import load_dotenv
 load_dotenv()
 
-def load_data(data):
+def load_data(data, db_url):
     print("Loading data to database...")
 
     #Get the database URL from environment variables
