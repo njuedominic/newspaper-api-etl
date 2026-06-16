@@ -13,6 +13,8 @@ def load_data(data, db_url):
 
     #Create the connection engine and load the data into the database
     engine = create_engine(db_url)
-    data.to_sql('news_articles', con=engine, if_exists='replace', index=False)
+
+    # create the DB connection
+    data.to_sql('gas_prices', con=engine, if_exists='replace', index=False)
 
     print("Data loaded successfully to the database.")
