@@ -15,6 +15,6 @@ def load_data(data, db_url):
     engine = create_engine(db_url)
 
     # create the DB connection
-    data.to_sql('gas_prices', con=engine, if_exists='replace', index=False)
+    data.to_sql('news_articles', con=engine, if_exists='replace', index=False)
 
     print("Data loaded successfully to the database.")
