@@ -10,3 +10,6 @@ webserver_config.py
 logs/
 airflow-*/
 *.pid
+airflow.db-shm
+airflow.db-wal
+simple_auth_manager_passwords.json.generated
