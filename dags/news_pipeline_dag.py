@@ -34,7 +34,7 @@ with DAG(
         python_callable = run_extraction,
     )
     transform_task = PythonOperator(
-        task_id = 'etransform_news_data',
+        task_id = 'transform_news_data',
         python_callable = run_transformation,
     )
     load_task = PythonOperator(
