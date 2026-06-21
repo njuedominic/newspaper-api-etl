@@ -1,17 +1,17 @@
-from extract import fetch_articles
-from transform import transform_data
-from load import load_data
+from extract import run_extraction
+from transform import run_transformation
+from load import run_loading
 import os
 
 def run_pipeline():
     # Extract data
-    data = fetch_articles()
+    data = run_extraction()
     
     # Transform data
-    transformed_data = transform_data(data)
+    transformed_data = run_transformation(data)
     
     # Load data
-    load_data(transformed_data, os.getenv('DATABASE_URL'))
+    run_loading(transformed_data, os.getenv('DATABASE_URL'))
 
 if __name__ == "__main__":
     run_pipeline()
