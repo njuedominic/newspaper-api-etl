@@ -3,3 +3,10 @@ newsprojectenv/
 *.env
 __pycache__/
 *.pyc
+# Airflow runtime files
+airflow.cfg
+airflow.db
+webserver_config.py
+logs/
+airflow-*/
+*.pid
