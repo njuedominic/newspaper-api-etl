@@ -1,6 +1,6 @@
 
 #Transform data by dropping columns and renaming them.
-def transform_data(data):
+def run_transformation(data):
     print("Transforming data...")
     # Drop unnecessary columns
     columns_to_drop = ['urlToImage', 'publishedAt', 'content', 'source.id', 'source.name']
