@@ -25,7 +25,7 @@ with DAG(
     'news_article_pipeline',
     default_args=default_args,
     description = "Extract news data from Newspaper.org, transforms it and loads it to a local postgresql db",
-    schedule_interval = '@daily',
+    schedule = '@daily',
     catchup = False,
 ) as dag:
     
